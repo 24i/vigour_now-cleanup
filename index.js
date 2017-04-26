@@ -29,7 +29,7 @@ const getDeployments = () => new Promise ((resolve, reject) => {
     .send()
 })
 
-const getDetails = tasks => new Promise(resolve => {
+const cleanup = tasks => new Promise(resolve => {
   const runner = concurrent([
     {
       timeout: 3 * 1000,
@@ -97,7 +97,7 @@ const getDetails = tasks => new Promise(resolve => {
 })
 
 getDeployments()
-  .then(getDetails)
+  .then(cleanup)
   .then(removed => {
     console.log('%d deployments removed.', Object.keys(removed).length)
   })
