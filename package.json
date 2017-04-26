@@ -1,0 +1,26 @@
+{
+  "name": "now-cleanup",
+  "version": "2.4.0",
+  "description": "Now cleanup",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigour-io/now-cleanup.git"
+  },
+  "keywords": [
+    "now",
+    "cleanup"
+  ],
+  "author": "Mustafa Dokumacı",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigour-io/now-cleanup/issues"
+  },
+  "homepage": "https://github.com/vigour-io/now-cleanup#readme",
+  "dependencies": {
+    "concurrent-task": "^5.0.0",
+    "observe-now": "^3.0.0"
+  }
+}
