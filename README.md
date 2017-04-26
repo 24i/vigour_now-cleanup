@@ -1,3 +1,3 @@
 # now-cleanup
 
-Not certain thi should go yet.
+Not certain this should go yet.
