@@ -69,7 +69,7 @@ const cleanup = tasks => new Promise(resolve => {
         ) {
           console.log('Removing:', dep.uid, dep.host, dep.state, dep.stateTs)
 
-          now.update('DELETE', `deployments/${dep.uid}`)
+          now.update('DELETE', `now/deployments/${dep.uid}`)
             .then(res => resolve({ removed: { [dep.uid]: {
               host: dep.host,
               state: dep.state,
